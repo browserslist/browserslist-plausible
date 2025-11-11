@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "files": [
+    ".",
+  ],
+  "allowCompoundWords": true,
+  "language": "en-US",
+  "words": [
+    // Browserslist Files
+    "browserslistrc",
+    // Can I Use Agents
+    "kaios",
+    // Names
+    "Falco",
+  ],
+  "ignorePaths": [
+    "pnpm-lock.yaml",
+  ],
+}
