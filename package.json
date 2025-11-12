@@ -1,7 +1,7 @@
 {
-  "packageManager": "pnpm@10.21.0",
+  "packageManager": "pnpm@10.22.0",
   "name": "browserslist-plausible",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a browserslist-stats.json file using data from your Plausible Analytics instance.",
   "keywords": [
     "browserslist",
@@ -14,7 +14,7 @@
   "imports": {
     "#src/*": "./src/*"
   },
-  "homepage": "https://github.com/browserslist/browserslist-plausible",
+  "homepage": "https://browsersl.ist",
   "bugs": {
     "url": "https://github.com/browserslist/browserslist-plausible/issues"
   },
