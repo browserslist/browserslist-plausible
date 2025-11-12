@@ -1,19 +1,19 @@
 # browserslist-plausible
 
-## Overview
+[![npm](https://img.shields.io/npm/v/browserslist-plausible)](https://npmjs.org/package/browserslist-plausible)
 
-`browserslist-plausible` generates a `browserslist-stats.json` file from Plausible Analytics data. Ultimately, it's a tool that matches dimensions from your Plausible data to browsers and versions in the Can I Use database—then writes the marketshare of each browser and version combination to a file.
+browserslist-plausible generates a `browserslist-stats.json` file from Plausible Analytics data. Ultimately, it's a tool that matches dimensions from your Plausible data to browsers and versions in the Can I Use database—then writes the marketshare of each browser and version combination to a file.
 
 ## Getting Started
 
 ### Installation
 
-First, install `browserslist-plausible`.
+First, install browserslist-plausible.
 
 You can install it globally with:
 
 ```sh
-npx browserslist-plausible
+npx browserslist-plausible --help
 ```
 
 Or as part of your projects dev dependencies with **_one_** of the following:
@@ -25,18 +25,18 @@ pnpm add --save-dev browserslist-plausible
 # etc. You get the idea! Do the equivalent for your package manager of choice.
 ```
 
-### Get an API Key
+### Create a Plausible Analytics API Key
 
 Next, login to your Plausible Analytics instance and generate a new API key. Once logged in, you'll find it on the `/settings/api-keys` page. Follow the instructions on-screen.
 
-It's recommended to save the API key to the `PLAUSIBLE_API_KEY` environment variable. However, if this is not set, `browserslist-plausible` will ask for you to input the API key at runtime.
+It's recommended to save the API key to the `PLAUSIBLE_API_KEY` environment variable. However, if this is not set, browserslist-plausible will ask for you to input the API key at runtime.
 
 ### Example Usage
 
 Get stats for `example.org` from your self-hosted Plausible server:
 
 <details>
-  <summary><code>browserslist-plausible --host https://plausible.example.org example.org</code></summary>
+  <summary><code>npx browserslist-plausible --host https://plausible.example.org example.org</code></summary>
 
 ```
 ✔ What is your Plausible API Key? *********************************************…
@@ -66,7 +66,7 @@ These browsers account for 87.9% of all users in custom statistics
 
 ## Plausible Analytics API vs. CSV Data Export
 
-`browserslist-plausible` only supports the Plausible Analytics API, not the CSV data exports.
+browserslist-plausible only supports the Plausible Analytics API, not the CSV data exports.
 
 CSV exports aren't as useful for this use case as it exports the browsers and devices separately, but a lot of the usage data depends on the combination of the two.
 
