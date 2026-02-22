@@ -35,7 +35,7 @@ describe('#matchDimensions', () => {
   });
 
   test('should not find match for unknown versions', () => {
-    const actual = matchDimensions(['Safari', '18.7', 'iOS', '18.7', 'Mobile']);
+    const actual = matchDimensions(['Safari', '18.8', 'iOS', '18.8', 'Mobile']);
     const expected = null;
     assert.deepEqual(actual, expected);
   });
