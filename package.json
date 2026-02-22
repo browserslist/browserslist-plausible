@@ -1,5 +1,5 @@
 {
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.30.1",
   "name": "browserslist-plausible",
   "version": "1.0.1",
   "description": "Generate a browserslist-stats.json file using data from your Plausible Analytics instance.",
