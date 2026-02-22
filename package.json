@@ -43,7 +43,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "format": "eslint --fix .",
     "test": "node --test ./**/*.test.js",
     "test:coverage": "node --experimental-test-coverage --test ./**/*.test.js",
     "typecheck": "tsc",
