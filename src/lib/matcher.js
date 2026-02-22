@@ -5,12 +5,16 @@ import { parseVersionSegments } from './version.js';
  * @typedef {object} StatKeys
  * @property {string} browser
  * @property {string} version
- * 
+ */
+
+/**
  * @typedef {object} Rule
  * @property {string=} browser
  * @property {string=} os
  * @property {import('../plausible/index.js').Device=} device
- * 
+ */
+
+/**
  * @typedef {object} AgentMatcher
  * @property {import('../caniuse-wrapped.js').Browser} agent
  * @property {Rule[]} rules
