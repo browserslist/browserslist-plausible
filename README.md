@@ -48,7 +48,7 @@ npx browserslist --coverage --stats=browserslist-stats.json
 
 </details>
 
-Now that you have your stats, you can the `my stats` keywords in your Browserslist config, and pass the file location to the `--stats` argument for Browserslist.
+Now that you have your stats, you can use the `my stats` keywords in your Browserslist config, and pass the file location to the `--stats` argument for Browserslist.
 
 **`.browserslistrc`**
 ```
@@ -76,4 +76,4 @@ The API supports this level of granularity very well, but the CSV export does no
 
 ## Notes
 
-* All browsers on Apple's mobile operating systems use Safari's WebKit as the underlying engine. So, all browsers on operatings systems like iOS and iPadOS are mapped to Safari.
+- All browsers on Apple's mobile operating systems use Safari's WebKit as the underlying engine. So, all browsers on operatings systems like iOS and iPadOS are mapped to Safari.
