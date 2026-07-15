@@ -31,12 +31,16 @@ export class PlausibleService {
       }
     );
 
-    const response = await resp.json();
-
     if (!resp.ok) {
-      const error = /** @type {import('.').PlausibleError} */ (response).error;
-      throw new Error(error);
+      if (resp.headers.get('content-type')?.includes('application/json')) {
+        const response = /** @type {import('.').PlausibleError} */ (await resp.json());
+        throw new Error(response.error);
+      }
+
+      throw new Error('Unable to connect to host. Please ensure that it was specified correctly and try again.');
     }
+
+    const response = await resp.json();
 
     const results = /** @type {import('.').QueryResponse} */ (response).results;
     const deviceIndex = query.dimensions?.indexOf('visit:device');
